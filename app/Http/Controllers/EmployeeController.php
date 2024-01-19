@@ -18,6 +18,11 @@ class EmployeeController extends Controller
         $data = Employee::all();
         // share data to view
         view()->share('employee',$data);
+
+        $data = [];
+          if (!is_array($data)) {
+              $data = [];
+}
         $pdf = PDF::loadView('pdf_view', $data);
         // download PDF file with download method
         return $pdf->download('pdf_file.pdf');

@@ -14,11 +14,11 @@
         <div class="d-flex justify-content-end mb-4">
             <a class="btn btn-primary" href="{{ URL::to('/employee/pdf') }}">Export to PDF</a>
         </div>
-        <a class="btn btn-primary" href="{{ URL::to('/employee/pdf') }}">Export to PDF</a>
+        <!-- <a class="btn btn-primary" href="{{ URL::to('/employee/pdf') }}">Export to PDF</a> -->
         <table class="table table-bordered mb-5">
             <thead>
                 <tr class="table-danger">
-                   //<th scope="col">#</th>
+                   <th scope="col">#</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
