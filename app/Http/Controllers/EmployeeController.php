@@ -12,7 +12,7 @@ class EmployeeController extends Controller
         $employee = Employee::all();
         return view('index', compact('employee'));
       }
-      // Generate PDF
+      // Generate PDF 
     public function createPDF() {
         // retreive all records from db
         $data = Employee::all();
